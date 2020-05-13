@@ -12,6 +12,6 @@ public class RouteSend {
         String message="send direct message";
         System.out.println("============="+message);
         //第一个参数是交换机，第二个参数是路由，第三个参数是消息
-        rabbitTemplate.convertAndSend("directExchange","direct.simple",message);
+        rabbitTemplate.convertAndSend("directExchange","direct",message);
     }
 }
